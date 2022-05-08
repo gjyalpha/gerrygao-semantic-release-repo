@@ -15,12 +15,12 @@
     "build": "tsdx build",
     "test": "tsdx test",
     "lint": "tsdx lint",
+    "commit": "git cz",
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
     "semantic-release": "semantic-release --branches main"
   },
-  "peerDependencies": {},
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
@@ -47,15 +47,21 @@
   ],
   "devDependencies": {
     "@size-limit/preset-small-lib": "^7.0.8",
+    "cz-conventional-changelog": "^3.3.0",
     "husky": "^7.0.4",
+    "semantic-release": "^19.0.2",
     "size-limit": "^7.0.8",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
-    "typescript": "^4.6.4",
-    "semantic-release": "^19.0.2"
+    "typescript": "^4.6.4"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/gjyalpha/gerrygao-semantic-release-repo.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
