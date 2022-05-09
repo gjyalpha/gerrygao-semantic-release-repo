@@ -57,7 +57,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gjyalpha/gerrygao-semantic-release-repo.git"
+    "url": "git+https://github.com/gjyalpha/gerrygao-semantic-release-repo.git"
   },
   "config": {
     "commitizen": {
